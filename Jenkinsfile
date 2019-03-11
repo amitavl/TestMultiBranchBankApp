@@ -9,7 +9,7 @@ stage('build')	{
 bat '''
 cd bank-mgmt-sys-python
 
-main.py
+python.exe main.py
 
 '''
 }
