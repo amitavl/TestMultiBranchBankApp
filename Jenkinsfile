@@ -4,7 +4,7 @@ checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleC
 echo"checkout done"
 }
 
-/*stage('build')	{
+stage('build')	{
 
 bat '''
 cd bank-mgmt-sys-python
@@ -13,7 +13,7 @@ python main.py
 
 '''
 }
-*/
+
 stage('deploy-dev')	{
 bat '''
 cd bank-mgmt-sys-python
